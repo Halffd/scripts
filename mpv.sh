@@ -10,7 +10,7 @@ fi
 URL=$1
 
 # Run streamlink in the background and redirect output to /dev/null
-nohup streamlink --player="mpv" $URL best > /dev/null 2>&1 &
+(mpv $URL > /dev/null 2>&1 &) 
 
 # Exit the script
 exit 0
